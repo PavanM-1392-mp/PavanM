@@ -1,0 +1,90 @@
+/* Background with overlay */
+body {
+  position: relative;
+  margin: 0;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  color: rgb(255, 255, 255);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('mainback.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 600px;
+  padding: 30px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+
+form button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: rgb(255, 255, 255);
+}
+
+th, td {
+  padding: 12px 8px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+button.deleteBtn {
+  background: #dc3545;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+button.deleteBtn:hover {
+  background: #a71d2a;
+}

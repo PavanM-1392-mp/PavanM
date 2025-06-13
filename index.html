@@ -1,35 +1,36 @@
-<html>
-    <head>
-        <title>pavan portfolio</title>
-        <style type="text/css">
-            ul{
-                color:white;
-                list-style-type:none;
-                font-size:xx-large;
-                background-color:rgb(109, 101, 118);
-                text-align:right;
-            }
-            li
-            {
-                display:inline;
-                margin: 7px;
-            }
-        </style>
-    </head>
-    <body style="background-image:url('pngtree.JPG');">
-        <ul>
-            <li>home</li>
-            <li>education</li>
-            <li>experience</li>
-            <li>certifications</li>
-            <li>Projects</li>
-            <li>contacts</li>
-        </ul>
-        <p style="color:rgb(235, 232, 231);font-family: Bernard MT;position: fixed;top: 200px">
-        <input type="button" value="i'm pavan in eee
-         pvpsit
-        kanuru,vijayawada-520007."/>
-            
-       
-        </p>
-        <input type="button" value="about me"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Information Management</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Student Information Management</h1>
+
+    <form id="studentForm">
+      <input type="text" id="name" placeholder="Student Name" required />
+      <input type="text" id="roll" placeholder="roll" min="1" required />
+      <input type="text" id="course" placeholder="Course" required />
+      <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Student List</h2>
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Roll</th>
+          <th>Course</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
